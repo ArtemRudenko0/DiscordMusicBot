@@ -2,13 +2,11 @@ import discord
 from discord.ext import commands
 
 import yt_dlp as youtube_dl
-from Config import token
+from Config import token, client_secret, client_id
 import functools
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-#Set your Spotify client_id and client_secret
-client_id = ''
-client_secret = ''
+
 
 YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist': 'False', 'simulate': 'True', 'key': 'FFmpegExtractAudio','age_limit': 18}
 
